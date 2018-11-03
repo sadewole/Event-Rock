@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Registered event</title>
+  <title>Registered users</title>
   <link rel="icon" href="./images/icons/favIcon.jpg">
   <!-- stylesheet -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="./css/master.css">
-  <link rel="stylesheet" href="css/admin_view_event.css">
+  <link rel="stylesheet" href="css/adminreg.css">
   <!-- script -->
   <script src="./javascript/jquery.js" charset="utf-8"></script>
 </head>
@@ -23,6 +23,14 @@
       You are amost there!!!!!!!!!!
        <br>
       <img src="./images/gif/load (4).gif" alt="loading" id ="loading">
+    </div>
+  </div>
+  <div id="dialogoverlay"></div>
+  <div id="dialogbox">
+    <div>
+      <div id="dialoghead"> Success </div>
+      <div id="dialogbody"></div>
+      <div id="dialogfooter"><button id="closebutton" class = 'btn btn-success'>OK</button></div>
     </div>
   </div>
     <div id="mysidenav" class="sidenav">
@@ -103,55 +111,26 @@
         </ul>
       </nav>
     </div>
-  </div>
+    </div>
 
-  <div class="dashboard">
 
-        <div class="myevent">
-          <h2>My Event</h2>
-          <table class="table table-hover table-striped" id="tableuser">
-            <thead>
-              <th>EVENT TITLE</th>
-              <th>EVENT DESCRIPTION</th>
-              <th>REGISTERED ATTENDANT</th>
-            </thead>
-            <tbody id="tbody">
 
-            </tbody>
-          </table>
-        </div>
+    <div class="dashboard">
+      <h2>Users</h2>
+      <table class="table" id="usertable">
 
-        <!-- view event popup -->
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <div id="caption">
-            <table class="table">
-              <thead>
-                <th>USERNAME</th>
-                <th>EMAIL</th>
-              </thead>
-              <tbody id="viewTable">
-
-              </tbody>
-            </table>
-          </div>
-        </div>
-  </div>
-
+      </table>
+    </div>
     <!-- end page div -->
-    <div  style="height: 150px;"></div>
+    <div style="height: 150px;"></div>
   </div>
-
-
-
-
-
-
 
   <!-- script -->
   <script src="javascript/bootstrap.min.js" charset="utf-8"></script>
-  <script src="javascript/admin.js" charset="utf-8"></script>
-  <script src="./javascript/admin_view_event.js" charset="utf-8"></script>
+  <script src="javascript/master.js" charset="utf-8"></script>
+  <script src ="javascript/adminreg.js">
+
+  </script>
   <script>
     $("#navbarDropdown").on('click', () => {
       $("#dropAcc").toggle()
